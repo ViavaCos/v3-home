@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <h1>Layout</h1>
+    <Header />
     <div class="container">
       <router-view></router-view>
     </div>
@@ -8,8 +8,12 @@
 </template>
 
 <script>
+import Header from '@/components/header'
 export default {
-  name: 'Layout'
+  name: 'Layout',
+  components: {
+    Header
+  }
 }
 </script>
 
